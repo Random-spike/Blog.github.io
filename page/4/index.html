@@ -123,7 +123,7 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="https://random-spike.github.io/Blog/博客导航/"/>
+    <link rel="canonical" href="https://random-spike.github.io/Blog/page/4/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
@@ -132,16 +132,14 @@
     
         
         <meta name="description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
-<meta property="og:type" content="article">
-<meta property="og:title" content="博客导航">
-<meta property="og:url" content="https://random-spike.github.io/Blog/%E5%8D%9A%E5%AE%A2%E5%AF%BC%E8%88%AA/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Blog">
+<meta property="og:url" content="https://random-spike.github.io/Blog/page/4/index.html">
 <meta property="og:site_name" content="Blog">
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://random-spike.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2025-09-21T17:39:30.000Z">
-<meta property="article:modified_time" content="2025-11-02T09:10:44.669Z">
-<meta property="article:author" content="Random-spike">
+<meta property="article:author" content="Random_spike">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://random-spike.github.io/images/redefine-og.webp">
     
@@ -165,7 +163,7 @@
     
     <title>
         
-            博客导航 | SMY&#39;s blog
+            SMY&#39;s blog - Come to find the answer.
         
     </title>
 
@@ -268,6 +266,41 @@
 <main class="page-container" id="swup">
 
 	
+	<style>
+    .home-article-item,
+    .sidebar-links,
+    .sidebar-content,
+    a.page-number,
+    a.extend,
+    .sidebar-links .links:hover,
+    .right-bottom-tools,
+    footer.footer {
+        background-color: var(--background-color-transparent-80) !important;
+    }
+    .right-bottom-tools:hover,
+    a.page-number:hover,
+    a.extend:hover {
+        background-color: var(--primary-color) !important;
+    }
+    .site-info,
+    .home-article-sticky-label {
+        background-color: var(--background-color-transparent-15) !important;
+    }
+    .home-article-sticky-label {
+        backdrop-filter: none !important;
+    }
+    .home-banner-background {
+        filter: blur(15px);
+    }
+</style>
+
+<div class="home-banner-background transition-fade fixed top-0 left-0 w-screen h-screen scale-125 sm:scale-110 box-border will-change-transform bg-cover">
+    <img src="/Blog/images/day.jpg" alt="home-banner-background" class="w-full h-full object-cover dark:hidden">
+    <img src="/Blog/images/night.png" alt="home-banner-background" class="w-full h-full object-cover hidden dark:block">
+</div>
+
+
+	
 
 	<div class="main-content-container flex flex-col justify-between min-h-dvh">
 		<div class="main-content-header">
@@ -280,9 +313,9 @@
                 </a>
             
             <a class="logo-title" href="/Blog/">
-                
+                <h1>
                 SMY&#39;s blog
-                
+                </h1>
             </a>
         </div>
 
@@ -397,7 +430,7 @@
 
                             <li class="navbar-item">
                                 <!-- Menu -->
-                                <a class=""
+                                <a class="active"
                                    href="/Blog/"
                                         >
                                     <i class="fa-regular fa-house fa-fw"></i>
@@ -552,7 +585,7 @@
 
                     <li class="drawer-navbar-item text-base my-1.5 flex flex-col w-full">
                         
-                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full "
+                        <a class="py-1.5 px-2 flex flex-row items-center justify-between gap-1 hover:!text-primary active:!text-primary text-2xl font-semibold group border-b border-border-color hover:border-primary w-full active"
                            href="/Blog/"
                         >
                             <span>
@@ -629,266 +662,169 @@
 
 		<div class="main-content-body transition-fade-up">
 			
+			<div class="home-sidebar-container">
+    <div class="sticky-container sticky">
+        
+        
+            
+                <div class="sidebar-links">
+                    <div class="site-info">
+                        <div class="site-name">SMY&#39;s blog</div>
+                        
+                            <div class="announcement">
+                                Reality.
+                            </div>
+                        
+                    </div>
+                    
+                        
+                            
+                                <a class="links" href="/Blog/archives">
+                                    
+                                        <i class="fa-regular fa-archive icon-space"></i>
+                                    
+                                    <span class="link-name">Archives</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/Blog/tags">
+                                    
+                                        <i class="fa-regular fa-tags icon-space"></i>
+                                    
+                                    <span class="link-name">Tags</span>
+                                </a>
+                            
+                        
+                            
+                                <a class="links" href="/Blog/categories">
+                                    
+                                        <i class="fa-regular fa-folder icon-space"></i>
+                                    
+                                    <span class="link-name">Categories</span>
+                                </a>
+                            
+                        
+                    
+                </div>
+            
+            <div class="sidebar-content"  marginTop >
+                <div class="avatar flex justify-center">
+    <img src="/Blog/images/avatar.jpg">
+</div>
+                <div class="author flex flex-col justify-center my-2.5 mx-0">
+    <div class="name">Random spike</div>
+    
+        <div class="label">vOwOv</div>
+    
+</div>
+                <div class="statistics flex justify-around my-2.5">
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/tags">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">10</div>
+        <div class="label text-third-text-color text-sm">标签</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/categories">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">7</div>
+        <div class="label text-third-text-color text-sm">分类</div>
+    </a>
+    <a class="item tag-count-item flex flex-col justify-center items-center w-20" href="/Blog/archives">
+        <div class="number text-2xl sm:text-xl text-second-text-color font-semibold">31</div>
+        <div class="label text-third-text-color text-sm">文章</div>
+    </a>
+</div>
+            </div>
+        
+
+    </div>
+</div>
+
+			
 
 			<div class="main-content">
-				<div class="post-page-container flex relative justify-between box-border w-full h-full">
-	<div class="article-content-container">
+				<div class="home-content-container">
+    <ul class="home-article-list">
+        
+            <li class="home-article-item">
 
-		<div class="article-title relative w-full">
-			
-			<div class="w-full flex items-center pt-6 justify-start">
-				<h1 class="article-title-regular text-second-text-color tracking-tight text-4xl md:text-6xl font-semibold px-2 sm:px-6 md:px-8 py-3">博客导航</h1>
-			</div>
-			
-		</div>
+                
 
-		
-		<div class="article-header flex flex-row gap-2 items-center px-2 sm:px-6 md:px-8">
-			<div class="avatar w-[46px] h-[46px] flex-shrink-0 rounded-medium border border-border-color p-[1px]">
-				<img src="/Blog/images/avatar.jpg">
-			</div>
-			<div class="info flex flex-col justify-between">
-				<div class="author flex items-center">
-					<span class="name text-default-text-color text-lg font-semibold">Random-spike</span>
-					
-					<span class="author-label ml-1.5 text-xs px-2 py-0.5 rounded-small text-third-text-color border border-shadow-color-1">vOwOv</span>
-					
-				</div>
-				<div class="meta-info">
-					<div class="article-meta-info">
-    <span class="article-date article-meta-item">
-        <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2025-09-22 01:39:30</span>
-        <span class="mobile">2025-09-22 01:39:30</span>
-        <span class="hover-info">创建</span>
-    </span>
-    
-        <span class="article-date article-meta-item">
-            <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2025-11-02 17:10:44</span>
-            <span class="mobile">2025-11-02 17:10:44</span>
-            <span class="hover-info">更新</span>
-        </span>
-    
+                
 
-    
-    
+                
+                <div class="flex flex-col gap-5 px-7 pb-7 pt-7">
+                    <h3 class="home-article-title">
+                        <a href="/Blog/%E4%B8%BA%E4%BB%80%E4%B9%88nitianyi%E7%9A%84%E5%90%8D%E5%AD%97%E8%B5%B7%E7%9A%84%E9%9D%9E%E5%B8%B8%E5%A5%BD/">
+                            为什么nitianyi的名字起的非常好
+                        </a>
+                    </h3>
 
-    
-    
-        <span class="article-wordcount article-meta-item">
-            <i class="fa-regular fa-typewriter"></i>&nbsp;<span>868 字</span>
+                    <div class="home-article-content markdown-body">
+                        
+                            
+                            为什么nitianyi的名字起的非常好###前情提要lxm老师在上公开课的时候，毫不犹豫的指出，新时代中国特色社会主义现代化建设者nitianyi的名字非常的好！而旧时代清朝特色封建统治闭关锁国战略策划者quansiyuan的名字非常的差！
+为什么呢？
+她认为，nitianyi的名字读音比较好，而quansiyuan的读音不好。（应该是在上一节关于古诗格律分析的一节课）
+###靠谱的朋友我从...
+                        
+                    </div>
+
+                    <div class="home-article-meta-info-container">
+    <div class="home-article-meta-info">
+        <span><i class="fa-solid fa-calendars"></i>&nbsp;
+            <span class="home-article-date" data-date="Thu Jul 11 2024 21:50:39 GMT+0800">
+                
+                    2024-07-11
+                
+            </span>
         </span>
-    
-    
-        <span class="article-min2read article-meta-item">
-            <i class="fa-regular fa-clock"></i>&nbsp;<span>3 分钟</span>
+        
+            <span class="home-article-category">
+                <i class="fa-solid fa-folders"></i>&nbsp;
+            <ul>
+                
+                
+                    
+                        
+                        <li>
+                            <a href="/Blog/categories/%E5%AD%A6%E4%B9%A0-%E6%96%87%E5%8C%96%E8%AF%BE/">学习&amp;文化课</a>&nbsp;
+                        </li>
+                    
+                    
+                
+            </ul>
         </span>
-    
-    
-        <span class="article-pv article-meta-item">
-            <i class="fa-regular fa-eye"></i>&nbsp;<span id="busuanzi_value_page_pv"></span>
-        </span>
-    
+        
+        
+            <span class="home-article-tag">
+                <i class="fa-solid fa-tags"></i>&nbsp;
+                <ul>
+                    
+                        <li>
+                            
+                            <a href="/Blog/tags/%E9%97%B2%E8%AF%9D/">闲话</a>&nbsp;
+                        </li>
+                    
+                </ul>
+            </span>
+        
+    </div>
+
+    <a href="/Blog/%E4%B8%BA%E4%BB%80%E4%B9%88nitianyi%E7%9A%84%E5%90%8D%E5%AD%97%E8%B5%B7%E7%9A%84%E9%9D%9E%E5%B8%B8%E5%A5%BD/">阅读全文<span class="seo-reader-text">为什么nitianyi的名字起的非常好</span>&nbsp;<i class="fa-solid fa-angle-right"></i></a>
 </div>
 
-				</div>
-			</div>
-		</div>
-		
-
-		
-
-
-		<div class="article-content markdown-body px-2 sm:px-6 md:px-8 pb-8">
-			<h2 id="注意要点："><a href="#注意要点：" class="headerlink" title="注意要点："></a>注意要点：</h2><ol>
-<li>本博客搭建网址不在中国大陆，可以尝试VPN链接以获得更稳定的链接。</li>
-<li>如果发现左上角角标无法完全加载，请检查网络状况，原因是BOOKMARKS的Icon无法加载。</li>
-<li>如有任何问题可以在主页找到本人社交媒体进行联系。</li>
-<li>想注册说说账号的可以联系我。</li>
-<li>订阅可以在24小时内获得文章推送。</li>
-</ol>
-<h2 id="🌈-精选推荐合集"><a href="#🌈-精选推荐合集" class="headerlink" title="🌈 精选推荐合集"></a>🌈 精选推荐合集</h2><h3 id="🥇-首推系列"><a href="#🥇-首推系列" class="headerlink" title="🥇 首推系列"></a>🥇 首推系列</h3><blockquote>
-<p>💡 高亮推荐 </p>
-</blockquote>
-<p>📘 <a href="https://random-spike.github.io/Blog/%E4%BD%A0%E4%BB%AC%E7%9A%84%E5%88%9B%E6%96%B0%E7%82%B9%E5%9C%A8%E5%93%AA%E9%87%8C_/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#1d9bf0"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#1d9bf0"><mtext mathvariant="bold">你们的创新点在哪里？</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#1d9bf0}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#1d9bf0}{\textbf{\text{你们的创新点在哪里？}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#1d9bf0;"><span class="mord text" style="color:#1d9bf0;"><span class="mord text" style="color:#1d9bf0;"><span class="mord textbf cjk_fallback" style="color:#1d9bf0;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#1d9bf0;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#1d9bf0;"><span class="mord text" style="color:#1d9bf0;"><span class="mord text" style="color:#1d9bf0;"><span class="mord textbf cjk_fallback" style="color:#1d9bf0;">你们的创新点在哪里？</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“碑需自立，名由己传”</p>
-</blockquote>
-<p>🛸 <a href="https://random-spike.github.io/Blog/%E5%B0%8F%E5%BF%83_%E4%BD%A0%E8%BA%AB%E8%BE%B9%E5%8F%AF%E8%83%BD%E6%9C%89%E5%A4%96%E6%98%9F%E4%BA%BA_/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#ff4081"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#ff4081"><mtext mathvariant="bold">小心！你身边可能有外星人！</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#ff4081}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#ff4081}{\textbf{\text{小心！你身边可能有外星人！}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#ff4081;"><span class="mord text" style="color:#ff4081;"><span class="mord text" style="color:#ff4081;"><span class="mord textbf cjk_fallback" style="color:#ff4081;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#ff4081;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#ff4081;"><span class="mord text" style="color:#ff4081;"><span class="mord text" style="color:#ff4081;"><span class="mord textbf cjk_fallback" style="color:#ff4081;">小心！你身边可能有外星人！</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“人群中最陌生的那一个，也许来自另一颗星。”</p>
-</blockquote>
-<p>👽 <a href="https://random-spike.github.io/Blog/%E4%BB%96_%E4%B8%80%E5%90%8D%E5%A4%96%E6%98%9F%E4%BA%BA/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#00b894"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#00b894"><mtext mathvariant="bold">他——一名外星人</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#00b894}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#00b894}{\textbf{\text{他——一名外星人}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#00b894;"><span class="mord text" style="color:#00b894;"><span class="mord text" style="color:#00b894;"><span class="mord textbf cjk_fallback" style="color:#00b894;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#00b894;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#00b894;"><span class="mord text" style="color:#00b894;"><span class="mord text" style="color:#00b894;"><span class="mord textbf cjk_fallback" style="color:#00b894;">他</span><span class="mord textbf" style="color:#00b894;">——</span><span class="mord textbf cjk_fallback" style="color:#00b894;">一名外星人</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“TA试图融入人群，却暴露了心灵的频率。”</p>
-</blockquote>
-<p>🧮 <a href="https://random-spike.github.io/Blog/%E5%A6%82%E4%BD%95%E5%9C%A8%E4%BD%9C%E6%96%87%E6%8B%BF%E5%88%B05%E5%88%86/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#ffb400"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#ffb400"><mtext mathvariant="bold">如何在作文中获得5分</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#ffb400}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#ffb400}{\textbf{\text{如何在作文中获得5分}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#ffb400;"><span class="mord text" style="color:#ffb400;"><span class="mord text" style="color:#ffb400;"><span class="mord textbf cjk_fallback" style="color:#ffb400;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#ffb400;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#ffb400;"><span class="mord text" style="color:#ffb400;"><span class="mord text" style="color:#ffb400;"><span class="mord textbf cjk_fallback" style="color:#ffb400;">如何在作文中获得</span><span class="mord textbf" style="color:#ffb400;">5</span><span class="mord textbf cjk_fallback" style="color:#ffb400;">分</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“其中，作文得到了整整5分。”</p>
-</blockquote>
-<p>📯 <a href="https://random-spike.github.io/Blog/%E5%90%B9%E5%8F%B7%E8%A7%92%E7%9A%84%E4%BA%BA/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#9c27b0"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#9c27b0"><mtext mathvariant="bold">吹号角的人</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#9c27b0}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#9c27b0}{\textbf{\text{吹号角的人}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#9c27b0;"><span class="mord text" style="color:#9c27b0;"><span class="mord text" style="color:#9c27b0;"><span class="mord textbf cjk_fallback" style="color:#9c27b0;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#9c27b0;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#9c27b0;"><span class="mord text" style="color:#9c27b0;"><span class="mord text" style="color:#9c27b0;"><span class="mord textbf cjk_fallback" style="color:#9c27b0;">吹号角的人</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“尖锐的号角声往往能刺破积压的天空，相反地，沉闷的号角声最终会在天地间回荡。”</p>
-</blockquote>
-<hr>
-<p>🌾 <a href="https://random-spike.github.io/Blog/%E5%AD%A6%E5%86%9C%E5%AE%9E%E5%BD%95/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#43a047"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#43a047"><mtext mathvariant="bold">学农实录</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#43a047}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#43a047}{\textbf{\text{学农实录}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#43a047;"><span class="mord text" style="color:#43a047;"><span class="mord text" style="color:#43a047;"><span class="mord textbf cjk_fallback" style="color:#43a047;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#43a047;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#43a047;"><span class="mord text" style="color:#43a047;"><span class="mord text" style="color:#43a047;"><span class="mord textbf cjk_fallback" style="color:#43a047;">学农实录</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“癫狂的岁月，是写作最真实的起点。”</p>
-</blockquote>
-<p>⏱️ <a href="https://random-spike.github.io/Blog/%E4%B8%80%E5%88%86%E9%92%9F%E7%9B%AE%E7%9D%B9%E8%80%83%E5%9C%BA%E4%B9%8B%E6%80%AA%E7%8E%B0%E7%8A%B6/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#039be5"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#039be5"><mtext mathvariant="bold">一分钟目睹考试之怪现状</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#039be5}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#039be5}{\textbf{\text{一分钟目睹考试之怪现状}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#039be5;"><span class="mord text" style="color:#039be5;"><span class="mord text" style="color:#039be5;"><span class="mord textbf cjk_fallback" style="color:#039be5;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#039be5;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#039be5;"><span class="mord text" style="color:#039be5;"><span class="mord text" style="color:#039be5;"><span class="mord textbf cjk_fallback" style="color:#039be5;">一分钟目睹考试之怪现状</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“有些人是这样的，考试分数和叫声大小成正相关。”</p>
-</blockquote>
-<p>🚗 <a href="https://random-spike.github.io/Blog/%E4%BD%9C%E6%96%87%E8%B5%8F%E6%9E%90_%E5%88%AB%E6%A0%B7%E7%9A%84%E7%A2%B0%E7%A2%B0%E8%BD%A6%E5%A4%A7%E6%88%98/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#ff6f00"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#ff6f00"><mtext mathvariant="bold">作文赏析——别样的碰碰车大战</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#ff6f00}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#ff6f00}{\textbf{\text{作文赏析——别样的碰碰车大战}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#ff6f00;"><span class="mord text" style="color:#ff6f00;"><span class="mord text" style="color:#ff6f00;"><span class="mord textbf cjk_fallback" style="color:#ff6f00;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#ff6f00;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#ff6f00;"><span class="mord text" style="color:#ff6f00;"><span class="mord text" style="color:#ff6f00;"><span class="mord textbf cjk_fallback" style="color:#ff6f00;">作文赏析</span><span class="mord textbf" style="color:#ff6f00;">——</span><span class="mord textbf cjk_fallback" style="color:#ff6f00;">别样的碰碰车大战</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“最后一句话「指导老师：戴薇」是本文的点睛之笔。背后蕴含深意。”</p>
-</blockquote>
-<p>🎓 <a href="https://random-spike.github.io/Blog/%E6%AF%95%E4%B8%9A%E5%85%B8%E7%A4%BC/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#5e35b1"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#5e35b1"><mtext mathvariant="bold">毕业典礼</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#5e35b1}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#5e35b1}{\textbf{\text{毕业典礼}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#5e35b1;"><span class="mord text" style="color:#5e35b1;"><span class="mord text" style="color:#5e35b1;"><span class="mord textbf cjk_fallback" style="color:#5e35b1;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#5e35b1;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#5e35b1;"><span class="mord text" style="color:#5e35b1;"><span class="mord text" style="color:#5e35b1;"><span class="mord textbf cjk_fallback" style="color:#5e35b1;">毕业典礼</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“也许差不多就这么结束了吧。”</p>
-</blockquote>
-<p>📖 <a href="https://random-spike.github.io/Blog/%E5%84%92%E6%9E%97%E5%A4%96%E5%8F%B2/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#8d6e63"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#8d6e63"><mtext mathvariant="bold">儒林外史</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#8d6e63}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#8d6e63}{\textbf{\text{儒林外史}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#8d6e63;"><span class="mord text" style="color:#8d6e63;"><span class="mord text" style="color:#8d6e63;"><span class="mord textbf cjk_fallback" style="color:#8d6e63;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#8d6e63;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#8d6e63;"><span class="mord text" style="color:#8d6e63;"><span class="mord text" style="color:#8d6e63;"><span class="mord textbf cjk_fallback" style="color:#8d6e63;">儒林外史</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“XX老矣，尚能X否？”<br>“XX云，何X之有？”</p>
-</blockquote>
-<p>🕰️ <a href="https://random-spike.github.io/Blog/SES_%E6%9F%90%E8%8B%B1%E8%AF%AD%E8%80%81%E5%B8%88%E8%A7%84%E5%88%99%E7%B1%BB%E6%80%AA%E8%B0%88/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#c2185b"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#c2185b"><mrow><mtext mathvariant="bold">SES</mtext><mtext> </mtext><mtext mathvariant="bold">某英语老师规则类怪谈</mtext></mrow></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#c2185b}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#c2185b}{\textbf{\text{SES 某英语老师规则类怪谈}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#c2185b;"><span class="mord text" style="color:#c2185b;"><span class="mord text" style="color:#c2185b;"><span class="mord textbf cjk_fallback" style="color:#c2185b;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#c2185b;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#c2185b;"><span class="mord text" style="color:#c2185b;"><span class="mord text" style="color:#c2185b;"><span class="mord textbf" style="color:#c2185b;">SES </span><span class="mord textbf cjk_fallback" style="color:#c2185b;">某英语老师规则类怪谈</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“规则不是无形的牢笼，越懂它的人越不恐惧。”</p>
-</blockquote>
-<p>🎖️ <a href="https://random-spike.github.io/Blog/%E5%86%9B%E8%AE%AD%E6%B8%B8%E8%AE%B0/"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><menclose notation="box"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="false"><mstyle scriptlevel="0" displaystyle="true"><mstyle mathcolor="#1565c0"><mtext mathvariant="bold">点击阅读</mtext><mo>▶</mo><mstyle mathcolor="#1565c0"><mtext mathvariant="bold">军训游记</mtext></mstyle></mstyle></mstyle></mstyle></mstyle></menclose></mrow><annotation encoding="application/x-tex">\boxed{\color{#1565c0}{\textbf{\text{点击阅读}}}\blacktriangleright \color{#1565c0}{\textbf{\text{军训游记}}}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.4013em;vertical-align:-0.3752em;"></span><span class="mord"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0261em;"><span style="top:-3.4013em;"><span class="pstrut" style="height:3.4013em;"></span><span class="boxpad"><span class="mord"><span class="mord"><span class="mord" style="color:#1565c0;"><span class="mord text" style="color:#1565c0;"><span class="mord text" style="color:#1565c0;"><span class="mord textbf cjk_fallback" style="color:#1565c0;">点击阅读</span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel amsrm" style="color:#1565c0;">▶</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mord" style="color:#1565c0;"><span class="mord text" style="color:#1565c0;"><span class="mord text" style="color:#1565c0;"><span class="mord textbf cjk_fallback" style="color:#1565c0;">军训游记</span></span></span></span></span></span></span></span><span style="top:-3.0261em;"><span class="pstrut" style="height:3.4013em;"></span><span class="stretchy fbox" style="height:1.4013em;border-style:solid;border-width:0.04em;"></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.3752em;"><span></span></span></span></span></span></span></span></span></a>  </p>
-<blockquote>
-<p>“它叫东方绿舟而不是东方绿洲。”</p>
-</blockquote>
-
-		</div>
-
-		
-		<div class="post-copyright-info w-full my-8 px-2 sm:px-6 md:px-8">
-			<div class="article-copyright-info-container">
-    <ul>
-        <li><strong>标题:</strong> 博客导航</li>
-        <li><strong>作者:</strong> Random-spike</li>
-        <li><strong>创建于
-                :</strong> 2025-09-22 01:39:30</li>
-        
-            <li>
-                <strong>更新于
-                    :</strong> 2025-11-02 17:10:44
+                </div>
             </li>
         
-        <li>
-            <strong>链接:</strong> https://random-spike.github.io/Blog/博客导航/
-        </li>
-        <li>
-            <strong>
-                版权声明:
-            </strong>
-            
-
-            
-                本文章采用 <a class="license" target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0">CC BY-NC-SA 4.0</a> 进行许可。
-            
-        </li>
     </ul>
+
+    <div class="home-paginator px-7 py-5">
+        <div class="paginator">
+	<a class="extend prev" rel="prev" href="/Blog/page/3/"><i class="fa-regular fa-angle-left"></i></a><a class="page-number" href="/Blog/">1</a><a class="page-number" href="/Blog/page/2/">2</a><a class="page-number" href="/Blog/page/3/">3</a><span class="page-number current">4</span>
 </div>
-
-		</div>
-		
-
-		
-
-		
-
-		
-		<div class="article-nav my-8 flex justify-between items-center px-2 sm:px-6 md:px-8">
-			
-			<div class="article-prev border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="prev" rel="prev" href="/Blog/%E5%AD%A6%E5%86%9C%E5%AE%9E%E5%BD%95/">
-					<span class="left arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-left"></i>
-					</span>
-					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">学农实录</span>
-						<span class="post-nav-item">上一篇</span>
-					</span>
-				</a>
-			</div>
-			
-			
-			<div class="article-next border-border-color shadow-redefine-flat shadow-shadow-color-2 rounded-medium px-4 py-2 hover:shadow-redefine-flat-hover hover:shadow-shadow-color-2">
-				<a class="next" rel="next" href="/Blog/%E5%AE%8C%E5%BD%A2%E5%A1%AB%E7%A9%BA%E4%B9%8B%E5%88%AB%E6%A0%B7%E7%9A%84%E7%A2%B0%E7%A2%B0%E8%BD%A6%E5%A4%A7%E6%88%98/">
-					<span class="title flex justify-center items-center">
-						<span class="post-nav-title-item truncate max-w-48">完形填空之别样的碰碰车大战</span>
-						<span class="post-nav-item">下一篇</span>
-					</span>
-					<span class="right arrow-icon flex justify-center items-center">
-						<i class="fa-solid fa-chevron-right"></i>
-					</span>
-				</a>
-			</div>
-			
-		</div>
-		
-
-
-		
-		<div class="comment-container px-2 sm:px-6 md:px-8 pb-8">
-			<div class="comments-container mt-10 w-full ">
-    <div id="comment-anchor" class="w-full h-2.5"></div>
-    <div class="comment-area-title w-full my-1.5 md:my-2.5 text-xl md:text-3xl font-bold">
-        评论
+  
     </div>
-    
-
-        
-            
-    <div id="waline"></div>
-    <script type="module" data-swup-reload-script>
-      import { init } from '/Blog/js/libs/waline.js';
-
-      function loadWaline() {
-        init({
-          el: '#waline',
-          serverURL: 'https://blog-comment-roan-rho.vercel.app',
-          dark: 'body[class~="dark-mode"]',
-          reaction: true,
-          requiredMeta: ['nick', 'mail'],
-          emoji: [],
-                    lang: 'zh-CN',
-        });
-      }
-
-      if (typeof swup !== 'undefined') {
-        loadWaline();
-      } else {
-        window.addEventListener('DOMContentLoaded', loadWaline);
-      }
-    </script>
-
-
-
-        
-    
 </div>
 
-		</div>
-		
-	</div>
-
-	
-	<div class="toc-content-container">
-		<div class="post-toc-wrap">
-	<div class="post-toc">
-		<div class="toc-title">目录</div>
-		<div class="page-title">博客导航</div>
-		<ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%B3%A8%E6%84%8F%E8%A6%81%E7%82%B9%EF%BC%9A"><span class="nav-text">注意要点：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%F0%9F%8C%88-%E7%B2%BE%E9%80%89%E6%8E%A8%E8%8D%90%E5%90%88%E9%9B%86"><span class="nav-text">🌈 精选推荐合集</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%F0%9F%A5%87-%E9%A6%96%E6%8E%A8%E7%B3%BB%E5%88%97"><span class="nav-text">🥇 首推系列</span></a></li></ol></li></ol>
-
-	</div>
-</div>
-	</div>
-	
-</div>
 			</div>
 
 			
@@ -972,26 +908,6 @@
 		</div>
 	</div>
 
-	
-	<div class="post-tools">
-		<div class="post-tools-container">
-	<ul class="article-tools-list">
-		<!-- TOC aside toggle -->
-		
-		<li class="right-bottom-tools page-aside-toggle">
-			<i class="fa-regular fa-outdent"></i>
-		</li>
-		
-
-		<!-- go comment -->
-		
-		<li class="go-comment">
-			<i class="fa-regular fa-comments"></i>
-		</li>
-		
-	</ul>
-</div>
-	</div>
 	
 
 	<div class="right-side-tools-container">
