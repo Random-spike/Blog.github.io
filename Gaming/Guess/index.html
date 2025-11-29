@@ -139,8 +139,8 @@
 <meta property="og:description" content="Hexo Theme Redefine, Redefine Your Hexo Journey.">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://random-spike.github.io/images/redefine-og.webp">
-<meta property="article:published_time" content="2025-11-27T17:28:25.260Z">
-<meta property="article:modified_time" content="2025-11-27T17:28:25.255Z">
+<meta property="article:published_time" content="2025-11-29T14:58:40.495Z">
+<meta property="article:modified_time" content="2025-11-29T14:58:40.489Z">
 <meta property="article:author" content="Random_spike">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://random-spike.github.io/images/redefine-og.webp">
@@ -653,6 +653,54 @@
     </script>
     <title>Number Guessing</title>
     <style>
+        :root {
+            /* 浅色主题变量 */
+            --bg-primary: #f0f2f5;
+            --bg-secondary: #ffffff;
+            --bg-tertiary: #f8f9fa;
+            --text-primary: #1a1a1a;
+            --text-secondary: #4a4a4a;
+            --text-tertiary: #6c757d;
+            --accent-primary: #4e54c8;
+            --accent-secondary: #8f94fb;
+            --accent-success: #28a745;
+            --accent-warning: #ffc107;
+            --accent-danger: #dc3545;
+            --accent-info: #17a2b8;
+            --border-color: #dee2e6;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --card-bg: rgba(255, 255, 255, 0.8);
+            --input-bg: #ffffff;
+            --input-text: #1a1a1a;
+            --points-bg: linear-gradient(45deg, #ffd700, #ffa500);
+            --points-text: #2d3436;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                /* 深色主题变量 */
+                --bg-primary: #121212;
+                --bg-secondary: #1e1e1e;
+                --bg-tertiary: #2d2d2d;
+                --text-primary: #ffffff;
+                --text-secondary: #e0e0e0;
+                --text-tertiary: #a0a0a0;
+                --accent-primary: #6c5ce7;
+                --accent-secondary: #a29bfe;
+                --accent-success: #00b894;
+                --accent-warning: #fdcb6e;
+                --accent-danger: #e17055;
+                --accent-info: #74b9ff;
+                --border-color: #444444;
+                --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+                --card-bg: rgba(30, 30, 30, 0.8);
+                --input-bg: #2d2d2d;
+                --input-text: #ffffff;
+                --points-bg: linear-gradient(45deg, #fdcb6e, #e17055);
+                --points-text: #2d3436;
+            }
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -661,22 +709,24 @@
         }
 
         body {
-            background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
+            background: var(--bg-primary);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
+            color: var(--text-primary);
+            transition: all 0.3s ease;
         }
 
         .game-container {
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--card-bg);
             backdrop-filter: blur(10px);
             border-radius: 20px;
             padding: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            color: white;
+            box-shadow: var(--shadow);
+            border: 1px solid var(--border-color);
+            color: var(--text-primary);
             max-width: 1000px;
             width: 100%;
             position: relative;
@@ -690,7 +740,7 @@
         .game-title {
             font-size: 2.5em;
             margin-bottom: 10px;
-            background: linear-gradient(45deg, #ffd89b, #19547b);
+            background: linear-gradient(45deg, var(--accent-primary), var(--accent-secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -709,7 +759,7 @@
         .points-display {
             text-align: center;
             margin-bottom: 20px;
-            background: linear-gradient(45deg, #ffd700, #ffa500);
+            background: var(--points-bg);
             padding: 15px;
             border-radius: 15px;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
@@ -718,13 +768,14 @@
         .points-value {
             font-size: 2.5em;
             font-weight: bold;
-            color: #fff;
+            color: var(--points-text);
             text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
 
         .points-label {
             font-size: 1.1em;
             opacity: 0.9;
+            color: var(--points-text);
         }
 
         .difficulty-selector {
@@ -738,20 +789,23 @@
             padding: 12px;
             border: none;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.1);
-            color: white;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
         }
 
         .difficulty-btn:hover {
-            background: rgba(255, 255, 255, 0.2);
+            background: var(--accent-primary);
+            color: white;
             transform: translateY(-2px);
         }
 
         .difficulty-btn.active {
-            background: rgba(255, 255, 255, 0.3);
+            background: var(--accent-primary);
+            color: white;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
@@ -760,13 +814,15 @@
             margin: 15px 0;
             font-size: 1.2em;
             font-weight: bold;
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--bg-tertiary);
             padding: 10px;
             border-radius: 10px;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
         }
 
         .range-numbers {
-            color: #ffd93d;
+            color: var(--accent-primary);
             font-size: 1.3em;
         }
 
@@ -779,18 +835,20 @@
             padding: 15px;
             border: none;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.9);
+            background: var(--input-bg);
             font-size: 1.1em;
             text-align: center;
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
-            color: #333;
+            color: var(--input-text);
+            border: 1px solid var(--border-color);
         }
 
         .guess-input:focus {
             transform: scale(1.02);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
             outline: none;
+            border-color: var(--accent-primary);
         }
 
         .action-buttons {
@@ -812,12 +870,12 @@
         }
 
         .guess-btn {
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            background: linear-gradient(45deg, var(--accent-danger), #d63031);
             color: white;
         }
 
         .save-btn {
-            background: linear-gradient(45deg, #4CAF50, #45a049);
+            background: linear-gradient(45deg, var(--accent-success), #00a085);
             color: white;
         }
 
@@ -829,7 +887,7 @@
         .result {
             margin: 20px 0;
             padding: 20px;
-            background: rgba(255, 255, 255, 0.2);
+            background: var(--bg-tertiary);
             border-radius: 15px;
             font-size: 1.2em;
             min-height: 100px;
@@ -841,30 +899,31 @@
             font-weight: bold;
             border: 2px solid transparent;
             transition: all 0.3s ease;
+            color: var(--text-primary);
         }
 
         .result.error {
-            background: rgba(255, 100, 100, 0.3);
-            border-color: #ff4444;
-            color: #ffcccc;
+            background: rgba(220, 53, 69, 0.1);
+            border-color: var(--accent-danger);
+            color: var(--accent-danger);
         }
 
         .result.warning {
-            background: rgba(255, 200, 100, 0.3);
-            border-color: #ffaa00;
-            color: #ffdd99;
+            background: rgba(255, 193, 7, 0.1);
+            border-color: var(--accent-warning);
+            color: var(--accent-warning);
         }
 
         .result.success {
-            background: rgba(100, 255, 100, 0.3);
-            border-color: #44ff44;
-            color: #ccffcc;
+            background: rgba(40, 167, 69, 0.1);
+            border-color: var(--accent-success);
+            color: var(--accent-success);
         }
 
         .points-earned {
             display: block;
             font-size: 1.4em;
-            color: #ffd700;
+            color: var(--accent-warning);
             margin-top: 10px;
             text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
         }
@@ -874,7 +933,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%) scale(0);
-            background: linear-gradient(135deg, #667eea, #764ba2);
+            background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
             padding: 30px;
             border-radius: 20px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
@@ -918,22 +977,24 @@
         }
 
         .stat-card {
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--bg-tertiary);
             padding: 20px;
             border-radius: 15px;
             text-align: center;
             transition: all 0.3s ease;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
         }
 
         .stat-card:hover {
             transform: translateY(-5px);
-            background: rgba(255, 255, 255, 0.15);
+            background: var(--bg-secondary);
         }
 
         .stat-title {
             font-size: 1.1em;
             margin-bottom: 10px;
-            color: #ffd93d;
+            color: var(--accent-primary);
         }
 
         .stat-value {
@@ -942,12 +1003,13 @@
         }
 
         .achievements-section {
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--bg-tertiary);
             padding: 20px;
             border-radius: 15px;
             margin-bottom: 20px;
             max-height: 300px;
             overflow-y: auto;
+            border: 1px solid var(--border-color);
         }
 
         .achievement-item {
@@ -955,9 +1017,11 @@
             align-items: center;
             padding: 12px;
             margin-bottom: 10px;
-            background: rgba(255, 255, 255, 0.05);
+            background: var(--bg-secondary);
             border-radius: 10px;
             transition: all 0.3s ease;
+            color: var(--text-primary);
+            border: 1px solid var(--border-color);
         }
 
         .achievement-item.unlocked {
@@ -987,29 +1051,31 @@
         }
 
         .achievement-points {
-            color: #ffd700;
+            color: var(--accent-warning);
             font-weight: bold;
         }
 
         .best-scores {
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--bg-tertiary);
             padding: 20px;
             border-radius: 15px;
             margin-bottom: 20px;
+            border: 1px solid var(--border-color);
         }
 
         .section-title {
             font-size: 1.3em;
             margin-bottom: 15px;
             text-align: center;
-            color: #ffd93d;
+            color: var(--accent-primary);
         }
 
         .score-item {
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
-            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            border-bottom: 1px solid var(--border-color);
+            color: var(--text-primary);
         }
 
         .score-item:last-child {
@@ -1021,13 +1087,14 @@
         }
 
         .score-value {
-            color: #ffd93d;
+            color: var(--accent-warning);
         }
 
         .storage-section {
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--bg-tertiary);
             padding: 20px;
             border-radius: 15px;
+            border: 1px solid var(--border-color);
         }
 
         .storage-buttons {
@@ -1041,22 +1108,25 @@
             padding: 12px;
             border: none;
             border-radius: 10px;
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
+            background: var(--bg-secondary);
+            color: var(--text-primary);
             font-weight: bold;
             cursor: pointer;
             transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
         }
 
         .storage-btn:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: var(--accent-primary);
+            color: white;
             transform: translateY(-2px);
         }
 
         .export-section {
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--bg-secondary);
             padding: 15px;
             border-radius: 10px;
+            border: 1px solid var(--border-color);
         }
 
         .export-buttons {
@@ -1069,14 +1139,16 @@
             padding: 10px;
             border: none;
             border-radius: 8px;
-            background: rgba(255, 255, 255, 0.15);
-            color: white;
+            background: var(--bg-tertiary);
+            color: var(--text-primary);
             cursor: pointer;
             transition: all 0.3s ease;
+            border: 1px solid var(--border-color);
         }
 
         .export-btn:hover {
-            background: rgba(255, 255, 255, 0.25);
+            background: var(--accent-primary);
+            color: white;
         }
 
         .file-input {
@@ -1088,14 +1160,15 @@
             font-size: 0.9em;
             opacity: 0.7;
             text-align: center;
+            color: var(--text-tertiary);
         }
 
         .footer {
             text-align: center;
             margin-top: 30px;
             padding-top: 20px;
-            border-top: 1px solid rgba(255, 255, 255, 0.2);
-            color: rgba(255, 255, 255, 0.6);
+            border-top: 1px solid var(--border-color);
+            color: var(--text-tertiary);
             font-size: 0.9em;
         }
 
